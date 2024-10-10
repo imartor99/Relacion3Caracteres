@@ -1,0 +1,13 @@
+Algoritmo ej2
+	// Realizar un programa que comprueba si una cadena leída por teclado comienza por una subcadena
+	// introducida por teclado.
+	Escribir 'Introduce una frase: '
+	Leer frase
+	Escribir 'Escribir una subcadena: '
+	Leer sub
+	Si Subcadena(frase,0,longitud(sub))=sub Entonces
+		Escribir 'La frase empieza por ', sub
+	SiNo
+		Escribir 'La frase no empieza por letra/s ', sub
+	FinSi
+FinAlgoritmo
