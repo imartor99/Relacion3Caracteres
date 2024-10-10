@@ -5,9 +5,15 @@ Algoritmo ej2
 	Leer frase
 	Escribir 'Escribir una subcadena: '
 	Leer sub
-	Si Subcadena(frase,0,longitud(sub))=sub Entonces
-		Escribir 'La frase empieza por ', sub
+	
+	i<-0
+	Mientras (Subcadena(frase, i, i) = Subcadena(sub, i, i)) Y i < Longitud(sub) Hacer
+		i <- i + 1
+		
+	Fin Mientras
+	Si i < Longitud(sub) Entonces
+		Escribir 'La frase no empieza por ', sub
 	SiNo
-		Escribir 'La frase no empieza por letra/s ', sub
+		Escribir 'La frase empieza por letra/s ', sub
 	FinSi
 FinAlgoritmo
