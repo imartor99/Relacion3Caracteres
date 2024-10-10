@@ -1,0 +1,11 @@
+Algoritmo ej1
+	//Escribir por pantalla cada carácter de una cadena introducida por teclado
+	
+	Escribir 'Dame una cadena: '
+	Leer cadena
+	Para contad<-0 Hasta longitud(cadena) Con Paso 1 Hacer
+		letra <- subcadena(cadena,contad,contad)
+		Escribir letra
+	FinPara
+	
+FinAlgoritmo
