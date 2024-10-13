@@ -1,0 +1,19 @@
+Algoritmo ej8
+	//Realizar un programa que lea una cadena por teclado y convierta las mayúsculas a minúsculas y
+	//viceversa.
+	
+	Escribir "Dame una cadena: "
+	Leer cade
+	Para cont<-0 Hasta longitud(cade) Con Paso 1 Hacer
+		letra <- subcadena(cade,cont,cont)
+		Si letra = Mayusculas(letra) Entonces
+			frasefinal <- concatenar(frasefinal,minusculas(letra))
+		SiNo
+			Si letra = Minusculas(letra) Entonces
+				frasefinal <- concatenar(frasefinal, Mayusculas(letra))
+			FinSi
+		FinSi
+	FinPara
+	Escribir frasefinal
+	
+FinAlgoritmo
