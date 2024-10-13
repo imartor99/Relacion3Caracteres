@@ -1,0 +1,21 @@
+Algoritmo ej10
+	//Introducir una cadena de caracteres e indicar si es un palíndromo. Una palabra palíndroma es aquella
+	//que se lee igual adelante que atrás.
+	
+	Definir cadena, invertida Como Cadena
+	Definir i, longCad Como Entero
+	Escribir 'Introduce una cadena: '
+	Leer cadena
+	longCad <- Longitud(cadena)
+	invertida <- ''
+	Para i<-longCad Hasta 0 Con Paso -1 Hacer
+		invertida <- Concatenar(invertida,SubCadena(cadena,i,i))
+	FinPara
+	Si cadena=invertida Entonces
+		Escribir 'La cadena es un palíndromo.'
+	SiNo
+		Escribir 'La cadena NO es un palíndromo.'
+	FinSi
+	
+	
+FinAlgoritmo
