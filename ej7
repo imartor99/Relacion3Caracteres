@@ -1,0 +1,29 @@
+Algoritmo ej7
+	//Pide una cadena y dos caracteres por teclado (valida que sea un carácter), sustituye la aparición del
+	//primer carácter en la cadena por el segundo carácter.
+	
+	Definir cade, car1, car2, nuevaCadena, letra Como Cadena
+	Definir i, longCad Como Entero
+	Escribir 'Introduce una cadena: '
+	Leer cade
+	Repetir
+		Escribir 'Introduce el primer carácter (a sustituir): '
+		Leer carac1
+	Hasta Que Longitud(carac1)=1
+	Repetir
+		Escribir 'Introduce el segundo carácter (con el que sustituir): '
+		Leer carac2
+	Hasta Que Longitud(carac2)=1
+	longCad <- Longitud(cade)
+	nuevaCadena <- ''
+	Para i<-0 Hasta longCad Hacer
+		letra <- SubCadena(cade,i,i)
+		Si letra=carac1 Entonces
+			nuevaCadena <- Concatenar(nuevaCadena,carac2)
+		SiNo
+			nuevaCadena <- Concatenar(nuevaCadena,letra)
+		FinSi
+	FinPara
+	Escribir 'La nueva cadena es: ', nuevaCadena
+	
+FinAlgoritmo
