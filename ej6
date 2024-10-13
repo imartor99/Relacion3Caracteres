@@ -1,0 +1,16 @@
+Algoritmo ej6
+	//Realizar un programa que dada una cadena de caracteres por caracteres, genere otra cadena
+	//resultado de invertir la primera.
+	
+	Definir frase, fraseinver, letra Como Caracter
+	Escribir 'Dime una frase: '
+	Leer frase
+	long <- longitud(frase)
+	Repetir
+		long <- long - 1
+		letra <- subcadena(frase,long,long)
+		fraseinver <- fraseinver + letra
+	Hasta Que long=0
+	Escribir fraseinver
+	
+FinAlgoritmo
